@@ -5,7 +5,6 @@
 /**
  * main - checks if a n is negative or positive then print it
  * Followed by a new line
- * @n: number to check
  *
  * Return: Always 0 (Success)
  */
@@ -21,7 +20,7 @@ int main(void)
 		printf("%d is negative\n", n);
 	} else if (n == 0)
 	{
-		printf("0 is zer0\n");
+		printf("0 is zero\n");
 	} else if (n > 0)
 	{
 		printf("%d is positive\n", n);
