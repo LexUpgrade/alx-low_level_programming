@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - Prints all possible combinations of two two-digit numbers
+ * main - prints all possible combinations of two two-digit numbers
  * followed by a new line
  *
- * Return: Always 0 (Success)
+ * Return: Always 0 (Success).
  */
 int main(void)
 {
 	int i, j, k, l;
 
 	for (i = 48; i <= 57; i++)
-		for (j = 48; j <= 56; j++)
+		for (j = 48; j <= 57; j++)
 			for (k = 48; k <= 57; k++)
-				for (l = 49; l <= 57; l++)
+				for (l = 48; l <= 57; l++)
 				{
 					if (((k + l) > (i + j) && k >= i) || i < k)
 					{
@@ -22,12 +22,13 @@ int main(void)
 						putchar(' ');
 						putchar(k);
 						putchar(l);
-
-						if (i + j + k + l != 227)
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					if (i + j + k + l == 227 && i == 57)
+					continue;
+					else
+					{
+					putchar(',');
+					putchar(' ');
+					}
 					}
 				}
 	putchar('\n');
