@@ -9,8 +9,8 @@
 int main(void)
 {
 	unsigned long int i, j, k, n;
-	
-	j = 1, k = 2;
+
+	j = 1, k = 2, n = 0;
 
 	for (i = 0; i < 50; i++)
 	{
