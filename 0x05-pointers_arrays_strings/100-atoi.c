@@ -27,7 +27,7 @@ int _atoi(char *s)
 
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			digit = s[i] + '0';
+			digit = s[i] - '0';
 			if (opr % 2)
 				digit = -digit;
 			num = num * 10 + digit;
