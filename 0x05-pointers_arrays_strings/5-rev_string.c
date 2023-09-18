@@ -9,7 +9,7 @@
 void rev_string(char *s)
 {
 	char tmp;
-	int i, len;
+	int i, len, len2;
 
 	len = 0;
 	i = 0;
@@ -19,10 +19,11 @@ void rev_string(char *s)
 		i++;
 	}
 	
+	len2 = len - 1;
 	for (i = 0; i < len / 2; i++)
 	{
 		tmp = s[i];
-		s[i] = s[len - 1];
-		s[len--] = tmp;
+		s[i] = s[len2];
+		s[len2--] = tmp;
 	}
 }
