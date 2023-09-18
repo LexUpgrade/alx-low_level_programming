@@ -32,7 +32,7 @@ int _atoi(char *s)
 				digit = -digit;
 			num = num * 10 + digit;
 			flg = 1;
-			if (s[i + 1] < '0' && s[i + 1] > '9')
+			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
 			flg = 0;
 		}
@@ -40,5 +40,6 @@ int _atoi(char *s)
 	}
 	if (flg == 0)
 		return (0);
+	
 	return (num);
 }
