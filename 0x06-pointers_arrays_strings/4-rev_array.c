@@ -2,7 +2,8 @@
 
 /**
  * reverse_array - reverses an array input
- * @n: size of array
+ * @a: Array to reverse
+ * @n: Size of array
  *
  * Return: void.
  */
