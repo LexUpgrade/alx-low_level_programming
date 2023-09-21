@@ -4,6 +4,7 @@
  * _strncpy - copies a string
  * @dest: string to overwrite
  * @src: string to copy
+ * @n: number of characters to copy
  *
  * Return: pointer to the destination string dest
  */
