@@ -4,6 +4,7 @@
  * _strncat - copies nth number of characters from string src to dest
  * @dest: string to add characters to
  * @src: string to copy
+ * @n: number of characters to add
  *
  * Return: pointer to dest.
  */
