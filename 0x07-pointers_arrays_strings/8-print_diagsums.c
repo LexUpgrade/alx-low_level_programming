@@ -9,7 +9,7 @@
  *
  * Return: void.
  */
-void print_diagsum(int *a, int size)
+void print_diagsums(int *a, int size)
 {
 	int i;
 	unsigned int sum, sum1;
