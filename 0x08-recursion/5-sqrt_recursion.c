@@ -4,8 +4,8 @@ int _sqrt(int n, int i);
 
 /**
  * _sqrt - calculates the sqaure root of n
- * @n:
- * @i:
+ * @n: number to calculate square root of
+ * @i: iterator
  *
  * Return: square root of n.
  */
