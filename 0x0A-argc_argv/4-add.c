@@ -43,29 +43,28 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int i, flg, sum;
+	int i, j, sum;
 
 	sum = 0;
-	flg = 0;
 	if (argc < 2)
 	{
 		printf("0\n");
 		return (0);
 	}
+
 	for (i = 1; i < argc; i++)
 	{
-		if (_atoi(argv[i]) == 0)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			flg = 1;
-			break;
+			if (argv[i][j] >= '0' && argv[i][j] <= '9')
+				continue;
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 	}
-	if (flg)
-	{
-		printf("Error\n");
-		return (1);
-	}
-
 	for (i = 1; i < argc; i++)
 		sum += _atoi(argv[i]);
 	printf("%d\n", sum);
