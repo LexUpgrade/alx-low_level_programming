@@ -43,7 +43,7 @@ int _atoi(char *s)
  *
  * Return: 0 (Success), 1 (Error).
  */
-int main(int agrc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int change[5] = {25, 10, 5, 2, 1};
 	int i, count, num;
