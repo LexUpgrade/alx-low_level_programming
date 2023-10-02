@@ -45,8 +45,7 @@ int _atoi(char *s)
  * @argc: Number of arguments passed
  * @agrv: Array of pointers
  *
- * Return: the products of two passed numbers, or 1 to indicate error,
- * if no arguments were passed.
+ * Return: 0 (Success), 1 (Error).
  */
 int main(int argc, char **agrv)
 {
@@ -54,11 +53,11 @@ int main(int argc, char **agrv)
 
 	if (argc < 3 || argc > 3)
 	{
-		printf("Eroor\n");
+		printf("Error\n");
 		return (1);
 	}
 	mul = _atoi(agrv[1]) * _atoi(agrv[2]);
 	printf("%d\n", mul);
-	
+
 	return (0);
 }
