@@ -52,15 +52,13 @@ int main(int argc, char **agrv)
 {
 	int mul;
 
-	if (argc == 1)
+	if (argc < 3 || argc > 3)
 	{
 		printf("Eroor\n");
 		return (1);
 	}
-	else
-	{
-		mul = _atoi(agrv[1]) * _atoi(agrv[2]);
-		printf("%d\n", mul);
-	}
+	mul = _atoi(agrv[1]) * _atoi(agrv[2]);
+	printf("%d\n", mul);
+	
 	return (0);
 }
