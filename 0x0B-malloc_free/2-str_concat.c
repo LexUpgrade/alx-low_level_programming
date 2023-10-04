@@ -7,7 +7,7 @@
  *
  * Return: length of string.
  */
-int _strlen(char *s)
+size_t _strlen(char *s)
 {
 	size_t len;
 
@@ -31,9 +31,6 @@ char *str_concat(char *s1, char *s2)
 	char *new_str;
 	size_t tot_sz, i, j, len1, len2;
 
-	if (s1 == NULL || s2 == NULL)
-		return (NULL);
-
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 
@@ -44,12 +41,16 @@ char *str_concat(char *s1, char *s2)
 	if (new_str == NULL)
 		return (NULL);
 
-	for (i = 0; i < len1; i++)
-		new_str[i] = s1[i];
+	if (s1)
+		for (i = 0; i < len1; i++)
+			new_str[i] = s1[i];
 
-	j = 0;
-	for ( ; i < tot_sz; i++)
-		new_str[i] = s2[j++];
+	if (s2)
+	{
+		j = 0;
+		for ( ; i < tot_sz; i++)
+			new_str[i] = s2[j++];
+	}
 
 	new_str[i] = '\0';
 
