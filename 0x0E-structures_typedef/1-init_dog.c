@@ -2,10 +2,10 @@
 
 /**
  * init_dog - initializes a variable of type struct dog
- * @d - pointer of struct dog
+ * @d: pointer of struct dog
  * @name: Name of the dog
  * @age: Age of the dog
- * @Owner: Name of the owner
+ * @owner: Name of the owner
  *
  * Return: Nothing.
  */
