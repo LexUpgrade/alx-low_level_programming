@@ -2,7 +2,7 @@
 #define _DOG_H_
 
 /********** LIBRARIES **********/
-#define <stdlib.h>
+#include <stdlib.h>
 
 /********** STRUCTS **********/
 /**
@@ -15,9 +15,9 @@
  */
 struct dog
 {
-	int age;
 	char *name;
 	char *owner;
+	float age;
 };
 
 #endif /* _DOG_H_ */
