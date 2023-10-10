@@ -2,6 +2,6 @@
 #define _3_FUNCTION_LIKE_MACRO_H_
 
 /********** MACROS **********/
-#define ABS(x) ((x) * -1)
+#define ABS(x) (((x) < 0) ? (x * -1) : (x))
 
 #endif /* _3_FUNCTION_LIKE_MACRO_H_ */
