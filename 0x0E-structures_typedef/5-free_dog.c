@@ -3,7 +3,7 @@
 
 /**
  * free_dog - frees memory area allocated by dog_t d
- * d: Memory area to free.
+ * @d: Memory area to free.
  *
  * Return: Nothing.
  */
