@@ -5,6 +5,7 @@
  * function passed.
  * @array: array of integers
  * @size: size of array
+ * @action: Pointer to function passed for format printing
  *
  * Return: Nothing.
  */
