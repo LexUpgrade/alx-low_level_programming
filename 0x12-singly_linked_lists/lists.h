@@ -3,7 +3,7 @@
 
 #include <stddef.h>
 
-/*****		STRUCT 		*****/
+/**********STRUCT**********/
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
@@ -19,7 +19,8 @@ typedef struct list_s
 	struct list_s *next;
 } list_t;
 
-/*****		FUNCTIONS	*****/
+/**********FUNCTIONS**********/
 size_t print_list(const list_t *h);
+size_t list_len(const list *h);
 
 #endif /* _LISTS_H_ */
