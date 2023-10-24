@@ -4,6 +4,7 @@
 /**
  * add_nodeint_end - Add a new node at the end of a listint_t list
  * @head: A node list
+ * @n: Data of new node to add
  *
  * Return: Address of the new element, or NULL if it fails
  */
