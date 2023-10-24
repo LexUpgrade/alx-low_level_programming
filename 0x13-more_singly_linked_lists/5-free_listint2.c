@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free__listint2 - Frees a listint_t list
+ * free_listint2 - Frees a listint_t list
  * @head: A node list to free
  *
  * Return: Nothing.
@@ -11,6 +11,8 @@ void free_listint2(listint_t **head)
 {
 	listint_t *ptr;
 
+	if (*head == NULL)
+		return (NULL);
 	while (*head)
 	{
 		ptr = *head;
