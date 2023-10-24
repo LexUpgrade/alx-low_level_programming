@@ -2,6 +2,25 @@
 #include <stdlib.h>
 
 /**
+ * node_len - Returns the number of nodes in a single list.
+ * @head: A node list
+ *
+ * Return: Number of nodes in head.
+ */
+size_t node_len(listint_t *head)
+{
+	size_t len = 0;
+	listint_t *ptr = head;
+
+	while (ptr)
+	{
+		ptr = ptr->next;
+		len++;
+	}
+	return (len);
+}
+
+/**
  * insert_nodeint_at_index - Inserts a new node at a given position.
  * @head: Pointer to a listint_t list
  * @idx: Position for insertion
@@ -18,6 +37,9 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (node == NULL)
 		return (NULL);
 	node->n = n;
+
+	if (--idx > node_len(*head))
+		return (NULL);
 
 	if (*head == NULL)
 	{
