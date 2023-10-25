@@ -2,6 +2,8 @@
 #include "lists.h"
 #include <stdlib.h>
 
+void free_list(listint_t *h);
+
 /**
  * free_listint_safe - A function that frees a list
  * @h: A pointer listint_t structure
