@@ -10,14 +10,11 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int maxi = 0x01;
+	unsigned long int value;
 
-	maxi <<= index;
-	if (maxi == 0)
+	if (index > 64)
 		return (-1);
 
-	if ((n & maxi))
-		return (1);
-	else
-		return (0);
+	value = n >> index;
+	return (value & 1);
 }
