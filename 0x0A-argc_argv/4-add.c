@@ -7,11 +7,20 @@
  *
  * Return: 1 if digit, 0 otherwise.
  */
-int is_digit(char c)
+int is_digit(char *str)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	return (0);
+	int flg = 0;
+	while (str)
+	{
+		if (*str >= '0' && *str <= '9')
+			flg = 1;
+		else
+			flg = 0;
+		str++;
+	}
+	if (flg == 0)
+		return (flg);
+	return (flg);
 }
 
 /**
@@ -23,7 +32,7 @@ int is_digit(char c)
  */
 int main(int argc, char **argv)
 {
-	int i, j, sum = 0, flg = 0;
+	int i, sum = 0, flg = 0;
 
 	if (argc < 2)
 	{
@@ -31,10 +40,9 @@ int main(int argc, char **argv)
 		return (0);
 	}
 
-	j = 0;
 	for (i = 1; i < argc; i++)
 	{
-		flg = is_digit(argv[i][j++]);
+		flg = is_digit(argv[i]);
 		if (flg)
 			sum += atoi(argv[i]);
 		else
