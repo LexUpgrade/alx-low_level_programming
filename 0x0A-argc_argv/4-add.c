@@ -16,6 +16,8 @@ int is_digit(char *str)
 
 /**
  * main - Prints the addition of all passed positive numbers to the program
+ * @argc: Number of arguments passed
+ * @argv: Array of arguments passed
  *
  * Return: Always 0.
  */
