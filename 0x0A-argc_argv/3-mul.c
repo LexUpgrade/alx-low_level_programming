@@ -3,6 +3,8 @@
 
 /**
  * main - Multiplies arguement values passed to it.
+ * @argc: Number of arguments passed
+ * @argv: Array of arguments passed
  *
  * Return: Always 0.
  */
