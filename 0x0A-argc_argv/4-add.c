@@ -23,7 +23,7 @@ int is_digit(char *str)
  */
 int main(int argc, char **argv)
 {
-	int i, j, sum = 0, flg = 0;
+	int i, sum = 0, flg = 0;
 
 	if (argc < 2)
 	{
@@ -31,7 +31,6 @@ int main(int argc, char **argv)
 		return (0);
 	}
 
-	j = 0;
 	for (i = 1; i < argc; i++)
 	{
 		flg = is_digit(argv[i]);
