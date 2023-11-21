@@ -26,8 +26,8 @@ int word_count(char *str)
 {
 	int i, count = 0, len = 0;
 
-	while (str[len++])
-		;
+	while (str[len])
+		len++;
 	for (i = 0; i < len; i++)
 		if (str[i] != ' ')
 		{
