@@ -85,6 +85,6 @@ char **strtow(char *str)
 		str_arr[i][j] = '\0';
 	}
 
-	str_arr[i] = '\0';
+	str_arr[i] = NULL;
 	return (str_arr);
 }
