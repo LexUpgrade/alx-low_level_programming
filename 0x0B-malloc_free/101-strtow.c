@@ -2,89 +2,82 @@
 #include <stdlib.h>
 
 /**
- * word_length - Returns the length of a word in a string it encounters
- * @str: String to compute.
+ * word_length - Returns the length of the first word in a string
+ * @str: string to compute
  *
- * Return: Length of the first word in str.
+ * Return: Length of the first word it encountered.
  */
 int word_length(char *str)
 {
-	int i = 0, len = 0;
+	int len = 0;
 
-	while (str[i] && str[i] != ' ')
-	{
+	while (str[len] && str[len] != ' ')
 		len++;
-		i++;
-	}
-
 	return (len);
 }
 
 /**
  * word_count - Counts the number of words in a string
- * @str: String to compute
+ * @str: string to compute
  *
- * Return: Number of words.
+ * Return: Number of words in a string.
  */
 int word_count(char *str)
 {
-	int i, count;
+	int i, count = 0, len = 0;
 
-	count = 0;
-	for (i = 0; str[i]; i++)
-	{
+	while (str[len++])
+		;
+	for (i = 0; i < len; i++)
 		if (str[i] != ' ')
 		{
+			i += word_length(str + i);
 			count++;
-			(str[i + 1] != ' ') ? count-- : count;
 		}
-	}
 	return (count);
 }
+
 /**
- * strtow - Splits a string into words
- * @str: String to split.
+ * strtow - Splits a string into words.
+ * @str: String to compute.
  *
- * Return: A pointer to an array of strings.
+ * Return: A pointer to an array of strings(words).
  */
 char **strtow(char *str)
 {
-	int i, j, wrd_cnt, wrd_len = 0, index = 0;
-	char **str_arr;
+	int i, j, index = 0, elemt, wrd_len;
+	char **words;
 
 	if (str == NULL || *str == '\0')
 		return (NULL);
 
-	wrd_cnt = word_count(str);
-	if (wrd_cnt == 0)
+	elemt = word_count(str);
+
+	words = malloc(sizeof(char *) * (elemt + 1));
+	if (!words)
 		return (NULL);
 
-	str_arr = malloc(sizeof(char *) * (wrd_cnt + 1));
-	if (!str_arr)
-		return (NULL);
-
-	for (i = 0; i < wrd_cnt; i++)
+	for (i = 0; i < elemt; i++)
 	{
 		while (str[index] == ' ')
 			index++;
 
 		wrd_len = word_length(str + index);
 
-		str_arr[i] = malloc(wrd_len + 1);
-
-		if (!str_arr[i])
+		words[i] = malloc(wrd_len + 1);
+		if (!words[i])
 		{
 			for (; i >= 0; i--)
-				free(str_arr[i]);
-			free(str_arr);
+				free(words[i]);
+			free(words);
 			return (NULL);
 		}
 
 		for (j = 0; j < wrd_len; j++)
-			str_arr[i][j] = str[index++];
-		str_arr[i][j] = '\0';
+			words[i][j] = str[index++];
+		words[i][j] = '\0';
 	}
+	words[i] = NULL;
 
-	str_arr[i] = NULL;
-	return (str_arr);
+	return (words);
 }
