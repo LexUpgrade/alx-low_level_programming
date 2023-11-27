@@ -1,7 +1,7 @@
 #ifndef _DOG_H_
 #define _DOG_H_
 
-/* STRUCTS */
+/* ---------- STRUCTS ---------- */
 
 /**
  * struct dog - Dog's data
@@ -16,7 +16,13 @@ struct dog
 	char *owner;
 };
 
-/* FUNCTIONS PROTOTYPES */
+/* ---------- TYPEDEF ---------- */
+/**
+ * dog_t - Typedef for struct dog
+ */
+typedef struct dog dog_t;
+
+/* ---------- FUNCTIONS PROTOTYPES ---------- */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 
