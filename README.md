@@ -27,4 +27,4 @@ Explore the intricacies of C, harness its capabilities, and embark on a journey 
 [0x0E-structures_typedef](https://github.com/Lex9jar/alx-low_level_programming/tree/main/0x0E-structures_typedef "Title") | 1-init_dog.c, 2-print_dog.c, 4-new_dog.c, 5-free_dog.c, dog.h, README.md
 [0x0F-function_pointers](https://github.com/Lex9jar/alx-low_level_programming/tree/main/0x0F-function_pointers "Title") | 0-print_name.c, 1-array_iterator.c, 100-main_opcodes.c, 2-int_index.c, 3-calc.h, 3-get_op_func.c, 3-main.c, 3-op_functions.c, function_pointers.h, README.md
 [0x10-variadic_functions](https://github.com/Lex9jar/alx-low_level_programming/tree/main/0x10-variadic_functions "Title") | 0-sum_them_all.c, 1-print_numbers.c, 2-print_strings.c, 3-print_all.c, variadic_functions.h, README.md
-_...to be updated due time...
+*...to be updated due time...*
