@@ -1,8 +1,4 @@
-# @@**ALX C Programming Course**@@ #
-![GitHub top language](https://img.shields.io/github/languages/top/lex9jar/alx_low_level_programming?color=blue)
-<br>
-![GitHub language count](https://img.shields.io/github/languages/count/lex9jar/alx_low_level_programming)
-![GitHub top language]
+# ** @@ALX C Programming Course@@ ** #
 <br>
 Welcome to the C Programming Repository! This repository serves as a comprehensive resource for learning and mastering the C programming language.
 This repository provides a detailed and insightful overview of the C programming language, offering a comprehensive understanding of its key features, functionalities, and applications. C is a versatile and widely-used programming language known for its efficiency, portability, and low-level access to memory. This repository contends resources and tasks for the fundamental and mastering concepts of C programming, covering topics such as getting started, basic concepts, control flow, functions, array and pointers, structure, dynamic memory allocation, file handling, preprocessor directives, multi-file projects, error handling and begging techniques.
