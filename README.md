@@ -8,7 +8,7 @@ Furthermore, the README file elucidates the importance of C in the context of mo
 
 Explore the intricacies of C, harness its capabilities, and embark on a journey of programming excellence with the information presented herein. Happy coding!
 
-### **DIRECTORIES**  | **FILES** ###
+**DIRECTORIES**  | **FILES** 
 ------------- | -------------
 [0x00-hello_world](https://github.com/Lex9jar/alx-low_level_programming/tree/main/0x00-hello_world "Title").  | Content Cell
 Content Cell  | Content Cell
