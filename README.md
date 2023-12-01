@@ -10,5 +10,6 @@ Explore the intricacies of C, harness its capabilities, and embark on a journey 
 
 |		CONTENT			|	FILES					|
 _________________________________________________________________________________
-[0x00-hello_world](https://github.com/Lex9jar/alx-low_level_programming/tree/main/0x00-hello_world "Title") |
+|[0x00-hello_world](https://github.com/Lex9jar/alx-low_level_programming/tree/main/0x00-hello_world "Title") | files files |
+_____________________________________________________________________________________________________________|______________
 
