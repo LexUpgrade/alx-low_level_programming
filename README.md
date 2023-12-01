@@ -1,6 +1,6 @@
 # **ALX C Programming Course** #
 <br>
-![main](https://media.licdn.com/dms/image/D4D12AQGvWHFDSOhMCg/article-cover_image-shrink_720_1280/0/1679804058550?e=1706745600&v=beta&t=YS3LGzrn1wqHwobAnxqNRaFoM9IdzTR4-Ert6b4apJw)
+![Alt](https://media.licdn.com/dms/image/D4D12AQGvWHFDSOhMCg/article-cover_image-shrink_720_1280/0/1679804058550?e=1706745600&v=beta&t=YS3LGzrn1wqHwobAnxqNRaFoM9IdzTR4-Ert6b4apJw "Title")
 <br>
 Welcome to the C Programming Repository! This repository serves as a comprehensive resource for learning and mastering the C programming language.
 This repository provides a detailed and insightful overview of the C programming language, offering a comprehensive understanding of its key features, functionalities, and applications. C is a versatile and widely-used programming language known for its efficiency, portability, and low-level access to memory. This repository contends resources and tasks for the fundamental and mastering concepts of C programming, covering topics such as getting started, basic concepts, control flow, functions, array and pointers, structure, dynamic memory allocation, file handling, preprocessor directives, multi-file projects, error handling and begging techniques.
