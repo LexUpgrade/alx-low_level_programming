@@ -7,9 +7,9 @@ Readers will gain valuable insights into the modular nature of C, as well as its
 Furthermore, the README file elucidates the importance of C in the context of modern programming languages, highlighting its influence on subsequent languages and its enduring relevance in the ever-evolving technology landscape. Whether you are a beginner looking to learn the basics or an experienced programmer seeking a quick reference guide, this document aims to serve as a comprehensive resource for anyone interested in mastering the C programming language.
 
 Explore the intricacies of C, harness its capabilities, and embark on a journey of programming excellence with the information presented herein. Happy coding!
-
-|		CONTENT			|	FILES					|
-_________________________________________________________________________________
+:---------|:------|
+| CONTENT | FILES |
+:---------|:------|
 |[0x00-hello_world](https://github.com/Lex9jar/alx-low_level_programming/tree/main/0x00-hello_world "Title") | files files |
 _____________________________________________________________________________________________________________|______________
 
