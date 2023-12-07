@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * _strlen - Returns the length of a string
+ * _strlen - Returns the length of a string.
  * @str: String to compute.
  *
  * Return: Number of characters in str.
