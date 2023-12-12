@@ -3,6 +3,8 @@
 /**
  * insert_nodeint_at_index - Inserts a new node at a given position.
  * @head: A type listint_t linked list.
+ * @idx: Index to insert new node
+ * @n: Data for new insertion.
  *
  * Return: The address of the new node, or NULL if it failed.
  */
@@ -24,7 +26,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 
 	ptr = *head;
-	while (ptr)
+	while (ptr && i < idx)
 	{
 		if (i == idx - 1)
 		{
@@ -33,8 +35,9 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			new_node->next = tmp;
 			return (new_node);
 		}
+		else
+			ptr = ptr->next;
 		i++;
-		ptr = ptr->next;
 	}
 	return (NULL);
 }
