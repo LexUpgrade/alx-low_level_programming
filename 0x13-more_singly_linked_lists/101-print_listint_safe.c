@@ -25,7 +25,7 @@ size_t print_listint_safe(const listint_t *head)
 			if (tmp == ptr)
 			{
 				printf("-> [%p] %d\n", (void *)tmp, tmp->n);
-				return (counter);
+				return (i);
 			}
 			ptr = ptr->next;
 			num++;
@@ -33,5 +33,5 @@ size_t print_listint_safe(const listint_t *head)
 		if (!head)
 			exit(98);
 	}
-	return (counter);
+	return (i);
 }
