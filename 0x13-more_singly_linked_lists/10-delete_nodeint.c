@@ -4,7 +4,7 @@
  * delete_nodeint_at_index - Deletes the node at index of a listint_t
  * linked list.
  * @head: A type listint_t linked list.
- * @idx: Where the node that should be deleted.
+ * @index: Where the node that should be deleted.
  *
  * Return: 1 if is succeeded, -1 if it failed.
  */
