@@ -9,16 +9,24 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *ptr = head;
+	listint_t *ptr, *nth_node;
 	size_t i = 0;
 
-	if (head == NULL)
+	nth_node = malloc(sizeof(listint_t));
+	if (!nth_node)
 		return (NULL);
 
-	while (i++ != index)
+	ptr = head;
+	while (ptr)
+	{
+		if (i == index)
+		{
+			nth_node->n = ptr->n;
+			nth_node->next = NULL;
+			return (nth_node);
+		}
+		i++;
 		ptr = ptr->next;
-	if (i < index)
-		return (NULL);
-
-	return (ptr);
+	}
+	return (NULL);
 }
