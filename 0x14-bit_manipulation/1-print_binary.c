@@ -8,7 +8,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int place_holder = 32768;
+	unsigned long int place_holder = 1UL << (sizeof(unsigned long int) * 8 - 1);
 	int flag = 0;
 
 	if (n == 0)
