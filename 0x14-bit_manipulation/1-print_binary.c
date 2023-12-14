@@ -1,17 +1,4 @@
 #include "main.h"
-#include <unistd.h>
-
-/**
- * _putchar - Writes a character to the stdout.
- * @c: Character to print
- *
- * Return: 1 on Success,
- * -1 if failed, and set errno appropriately.
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 
 /**
  * print_binary - Prints the binary representation of a number
