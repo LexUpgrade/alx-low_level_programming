@@ -1,4 +1,5 @@
 #include "main.h"
+#include <limits.h>
 
 /**
  * _putchar - Writes a character to the stdout.
@@ -20,7 +21,7 @@ int _putchar(char c)
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int place_holder = 1UL << (sizeof(unsigned long int) * 8 - 1);
+	unsigned long int place_holder = 32768;
 	int flag = 0;
 
 	if (n == 0)
