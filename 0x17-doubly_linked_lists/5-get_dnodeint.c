@@ -21,6 +21,9 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	found->prev = NULL;
 	found->next = NULL;
 
+	while (ptr->prev != NULL)
+		ptr = ptr->prev;
+
 	if (index == 0)
 	{
 		found->n = ptr->n;
