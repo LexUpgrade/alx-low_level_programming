@@ -3,9 +3,9 @@
 
 /**
  * linear_search - Searches for a value in an array of integers.
- * array: Pointer to an array of integers.
- * size: Size of <array>.
- * value: The value to search for.
+ * @array: Pointer to an array of integers.
+ * @size: Size of <array>.
+ * @value: The value to search for.
  *
  * Return: The index of <value> in <array>, otherwise -1.
  */
