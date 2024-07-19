@@ -22,7 +22,7 @@ int jump_search(int *array, size_t size, int value)
 	jump = (size_t) sqrt((double) size);
 
 	do {
-		printf("Value checksed array[%lu] = [%d]\n", prev, array[idx]);
+		printf("Value checked array[%lu] = [%d]\n", prev, array[idx]);
 		if (array[idx] == value)
 			return (idx);
 		i++;
