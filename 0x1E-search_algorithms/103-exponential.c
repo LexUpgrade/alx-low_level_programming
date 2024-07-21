@@ -3,23 +3,23 @@
 /**
  * print_array - Prints a subarray of integer values, followed by a new line.
  * @array: Pointer to the first element of the array.
- * @low: Index to start printing.
- * @high: Index to stop printing.
+ * @beg: Index to start printing.
+ * @end: Index to stop printing.
  *
  * Return: void.
  */
 void print_array(int *array, size_t beg, size_t end)
 {
-        size_t i;
+	size_t i;
 
-        printf("Searching in array: ");
-        for (i = beg; i <= end; i++)
-        {
-                printf("%d", array[i]);
-                if (i != end)
-                        printf(", ");
-        }
-        printf("\n");
+	printf("Searching in array: ");
+	for (i = beg; i <= end; i++)
+	{
+		printf("%d", array[i]);
+		if (i != end)
+			printf(", ");
+	}
+	printf("\n");
 }
 
 /**
@@ -34,23 +34,23 @@ void print_array(int *array, size_t beg, size_t end)
  */
 int _binary_search(int *array, size_t low, size_t high, int value)
 {
-        size_t mid;
+	size_t mid;
 
-        if (!array)
-                return (-1);
+	if (!array)
+		return (-1);
 
 	while (low <= high)
-        {
-                print_array(array, low, high);
-                mid = (low + high) >> 1;
-                if (array[mid] == value)
-                        return ((int)mid);
-                else if (array[mid] > value)
-                        high = mid - 1;
-                else if (array[mid] < value)
-                        low = mid + 1;
-        }
-        return (-1);
+	{
+		print_array(array, low, high);
+		mid = (low + high) >> 1;
+		if (array[mid] == value)
+			return ((int)mid);
+		else if (array[mid] > value)
+			high = mid - 1;
+		else if (array[mid] < value)
+			low = mid + 1;
+	}
+	return (-1);
 }
 
 /**
